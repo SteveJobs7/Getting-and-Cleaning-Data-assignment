@@ -29,7 +29,7 @@ else {
 	train_subject <- read.table("train/subject_train.txt", header = FALSE, colClasses = "numeric", na.strings = c("N/A"))
 
 
-	# Task 3
+	# Task 3 in assignment
 	# Use descriptive activity names to name the activities in the data set
 	test_activity <- read.table("test/y_test.txt", header = FALSE, colClasses = "numeric", na.strings = c("N/A"))
 	test_activity <- activity_labels[test_activity$V1]
@@ -45,16 +45,16 @@ else {
 	colnames(total_test)[length(total_test)] <- "Activity"
 	colnames(total_train)[length(total_train)] <- "Activity"
 
-	# Task 1
+	# Task 1 in assignment
 	# Merge the training and the test sets to create one data set.
 	total <- rbind(total_train, total_test)
 
-	# Task 4
+	# Task 4 in assignment
 	# Appropriately label the data set with descriptive activity names. 
 	column_names <- features_mapping[,2]
 	colnames(total) <- c(column_names, "Subject", "Activity")
 
-	# Task 2
+	# Task 2 in assignment
 	# Extract only the measurements on the mean and standard deviation for each measurement. 
 	# Mean should not be capital because in the features.txt file, it is described that the
 	# mean is typed with "small m".
