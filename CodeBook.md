@@ -12,11 +12,11 @@ The Variables
 The tidy set contains the following variables:
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value. Type: Numeric
-std(): Standard deviation. Type: Numeric
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency. Type: Numeric
-Subject: There are 30 subjects. Type: Numeric, Values: 1-30
-Activity: Type: Factor, Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+- mean(): Mean value. Type: Numeric  
+- std(): Standard deviation. Type: Numeric  
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency. Type: Numeric  
+- Subject: There are 30 subjects. Type: Numeric, Values: 1-30  
+- Activity: Type: Factor, Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING  
 
 
 
